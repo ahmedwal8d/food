@@ -1,0 +1,261 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+i {
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color:red;
+    --main-padding:60px;
+}
+/* End Global Rules */
+/* Start Header */
+.header {
+    background-color: #959494;
+}
+.header .continer {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .continer .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header .continer .logo img {
+    width: 50px;
+    padding-right: 5px;
+}
+.header .continer .logo .text {
+    color: white;
+}
+.header .continer .icon i {
+    font-size: 25px;
+    padding-left: 5px;
+}
+.header .continer .phone {
+    display: flex;
+}
+.header .continer .phone i {
+    padding-right: 5px;
+}
+.header .continer .person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .continer .person .img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header .continer .person i {
+    font-size: 25px;
+    padding-left: 5px;
+}
+/* End Header */
+/* Start nav */
+.nav .continer {
+    padding-left: 600px;
+    padding-right: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.nav .continer ul {
+    display: flex;
+}
+.nav .continer ul li {
+    padding-left: 40px;
+    position: relative;
+    padding-bottom: 30px;
+}
+.nav .continer ul li a {
+    color: #9fa3a7;
+}
+.nav .continer ul li:first-of-type a {
+    color: var(--main-color);
+}
+.nav .continer ul li a:hover {
+    color: red;
+}
+.nav .continer ul li:first-of-type a::before {
+    content: '';
+    border-width: 10px;
+    border-color: transparent transparent transparent red;
+    border-style: solid;
+    position: absolute;
+    left: 19px;
+    top: -2px;
+}
+/* End nav */
+/* Start landing */
+.landing {
+    background-color: #eee;
+    direction: ltr;
+    padding-top: 30px;
+    position: relative;
+}
+.landing .continer {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-bottom: 174px;
+}
+.landing .continer .intro-text {
+    flex: 1;
+}
+.landing .continer .intro-text h1 {
+    font-size: 50px;
+    word-spacing: 5px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.landing .continer .intro-text p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+.landing .continer .img img {
+    width: 500px;
+    border-radius: 10%;
+}
+.landing .continer .img img::before {
+    content: '';
+    position: absolute;
+
+}
+.landing .button {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    position: absolute;
+    top: 64%;
+}
+.landing .button button {
+    width: 120px;
+    padding: 6px;
+    border-radius: 11px;
+    background-color: var(--main-color);
+    color: white
+}
+/* End landing */
+/* Start Follows */
+.follows .continer {
+    padding-left: 600px;
+    padding-right: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follows .continer .col {
+    padding-left: 30px;
+    text-align: center;
+}
+.follows .continer .col p {
+    font-size: 20px;
+}
+.follows .continer .col h3  {
+    font-size: 20px;
+}
+/* End Follows */
+/* Start Meat Meal */
+.meat-meal {
+    position: relative;
+}
+.meat-meal .continer  {
+    display: flex;
+    background-color: #f1ecec;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.meat-meal .continer .intro-text h1 {
+    font-size: 40px;
+    color: var(--main-color);
+}
+.meat-meal .continer .intro-text p {
+    line-height: 1.8;
+    font-size: 20px;
+}
+.meat-meal .img img {
+    width: 500px;
+    border-radius: 10%;
+}
+.meat-meal .button {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    position: absolute;
+    top: 85%;
+}
+.meat-meal .button button {
+    width: 120px;
+    padding: 6px;
+    border-radius: 11px;
+    background-color: var(--main-color);
+    color: white
+}
+
+/* End Meat Meal */
+/* Start Footer */
+.footer {
+    background-color: #121111;
+}
+.footer .continer {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    color: white;
+}
+.footer .continer .link ul li {
+    padding-bottom: 10px;
+}
+.footer .continer .link ul li a {
+    color: white;
+}
+.footer .continer .link ul li a:hover {
+    color: var(--main-color);
+}
+.footer .continer .contact h3 {
+    padding-bottom: 10px;
+}
+.footer .continer .contact p {
+    padding-bottom: 10px;
+}
+.footer .continer .opening h3 {
+    padding-bottom: 10px;
+}
+.footer .continer .opening p {
+    padding-bottom: 10px;
+}
+/* End Footer */
